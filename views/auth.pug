@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  form.form-horizontal(method='post')
+    .form-group
+      label.col-md-4.control-label(for='name') Username
+      .col-md-4
+        input#name.form-control.input-md(name='name' type='text' placeholder='name')
+    .form-group
+      label.col-md-4.control-label(for='gender') Gender
+      .col-md-4
+        select#gender(name='gender')
+          option(value='male') Male
+          option(value='female') Female
+    .form-group
+      label.col-md-4.control-label(for='gender_preference') Gender preference
+      .col-md-4
+        select#gender_preference(name='gender_preference')
+          option(value='male') Male
+          option(value='female') Female
+    .form-group
+      label.col-md-4.control-label(for='send')
+      .col-md-4
+        input#send.btn.btn-primary(type='submit' name='send' value="send")

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  button#logout_btn(onclick='logout()') logout
+  #connections
+    p connections: 0
+  p Welcome to #{title}
+  #messages.messages
+  div
+    input#send_text(type='text')
+    button#send_btn(onclick='send()') send
+    button#match_btn(onclick='match()') match
+    button#disconnect_btn(onclick='disconnect()') disconnect
+
+  script(src="/javascripts/index.js")
+
